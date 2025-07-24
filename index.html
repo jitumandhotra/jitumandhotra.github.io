@@ -1,84 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jitander Mandhotra | PHP Web Developer</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" href="assets/img/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jitander Mandhotra - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-<header class="container">
-  <nav class="nav">
-    <div class="brand"><a href="/">JM</a></div>
-    <button id="navToggle" class="nav-toggle">☰</button>
-    <ul id="navMenu" class="nav-menu">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about.html">About</a></li>
-      <li><a href="/projects.html">Projects</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jitander</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-section" style="background-color: #312e81;">
+        <div class="hero-circle">JM</div>
+        <h1 class="display-4 hero-title">Hi, I'm <span>Jitander Mandhotra</span></h1>
+        <h4 class="mb-3">Full Stack PHP Developer</h4>
+        <p class="mb-4" style="max-width: 600px;">
+            I have 4.5+ years of experience in developing and maintaining dynamic web applications using modern frameworks like PHP and Laravel. Passionate about solving real-world problems.
+        </p>
+        <p>
+            <i class="bi bi-envelope"></i> mandhotra76@gmail.com &nbsp; | &nbsp;
+            <i class="bi bi-telephone"></i> 7018581904
+        </p>
+        <div class="mt-4">
+            <a href="#about" class="btn btn-primary hero-btn">Learn More About Me</a>
+            <a href="#contact" class="btn btn-outline-light hero-btn">Get In Touch</a>
+        </div>
+    </section>
 
-<section class="hero container">
-  <div class="hero-text">
-    <h1>Jitander Mandhotra</h1>
-    <h2>PHP / Laravel Web Developer</h2>
-    <p>4+ years building, integrating and maintaining dynamic web apps with Laravel, WordPress, MySQL, REST APIs, real‑time features and queues.</p>
-    <div class="cta">
-      <a class="btn" href="/about.html">View Resume</a>
-      <a class="btn outline" href="/projects.html">See Projects</a>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 dark-section text-white">
+        <div class="container">
+            <h2 class="gradient-text text-center mb-3">
+      About <span class="text-primary">Me</span>
+    </h2>
+            <p class="text-center text-secondary mb-5">
+                Passionate software engineer with expertise in modern web technologies
+            </p>
+
+            <div class="row">
+                <!-- Left Content -->
+                <div class="col-lg-6">
+                    <h4 class="mb-3">My Journey</h4>
+                    <p class="text-light">
+                        I have 4.5+ years of experience in software development, specializing in PHP, Laravel, and modern web technologies. My professional knowledge and problem-solving attitude help me to overcome every barrier.
+                    </p>
+                    <p class="text-light">
+                        I would like to work in a place where I can improve my knowledge and contribute to meaningful projects. I have developed applications for various industries and always aim for quality outcomes.
+                    </p>
+
+                    <h5 class="mt-4">My Strengths</h5>
+                    <ul class="list-unstyled text-light">
+                        <li><i class="bi bi-check2 text-primary"></i> Always ready for change</li>
+                        <li><i class="bi bi-check2 text-primary"></i> Decision-making quality</li>
+                        <li><i class="bi bi-check2 text-primary"></i> Dedication to work</li>
+                        <li><i class="bi bi-check2 text-primary"></i> Friendly work environment</li>
+                    </ul>
+
+                    <h5 class="mt-4">Hobbies & Interests</h5>
+                    <div>
+                        <span class="badge bg-primary me-2">Cricket</span>
+                        <span class="badge bg-secondary me-2">Music</span>
+                        <span class="badge bg-info text-dark">Chess</span>
+                    </div>
+                </div>
+
+                <!-- Right Stats -->
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="p-4 text-center bg-secondary bg-opacity-10 rounded shadow-sm">
+                                <i class="bi bi-briefcase fs-2 text-primary"></i>
+                                <h4 class="mt-2">4.5+</h4>
+                                <p class="mb-0">Years Experience</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 text-center bg-secondary bg-opacity-10 rounded shadow-sm">
+                                <i class="bi bi-folder-check fs-2 text-primary"></i>
+                                <h4 class="mt-2">20+</h4>
+                                <p class="mb-0">Projects Completed</p>
+                            </div>
+                        </div>                         
+                        <div class="col-6">
+                            <div class="p-4 text-center bg-secondary bg-opacity-10 rounded shadow-sm">
+                                <i class="bi bi-bullseye fs-2 text-primary"></i>
+                                <h4 class="mt-2">100%</h4>
+                                <p class="mb-0">Dedication</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="text-center mt-5">
+                <h5>Languages</h5>
+                <div class="d-flex justify-content-center gap-4 mt-3">
+                    <div>
+                        <span class="text-2xl">🇬🇧</span>
+                        <p>English</p>
+                    </div>
+                    <div>
+                        <span class="text-2xl">🇮🇳</span>
+                        <p>Hindi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="light-section py-5 text-white">
+        <div class="container">
+            <h2 class="text-center gradient-text">Technical <span>Skills</span></h2>
+            <p class="text-center text-secondary mb-5">
+                Here are the technologies and tools I work with to bring ideas to life
+            </p>
+
+            <!-- Skills Cards -->
+            <div class="row g-4 justify-content-center">
+                <!-- Backend Technologies -->
+                <div class="col-md-4">
+                    <div class="p-4 bg-secondary bg-opacity-10 rounded shadow-sm">
+                        <h5 class="mb-4 text-center">Backend Technologies</h5>
+                        <p class="mb-2">PHP <span class="float-end">90%</span></p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 90%;"></div>
+                        </div>
+
+                        <p class="mb-2">Laravel <span class="float-end">85%</span></p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 85%;"></div>
+                        </div>
+
+                        <p class="mb-2">WordPress <span class="float-end">80%</span></p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 80%;"></div>
+                        </div>
+
+                        <p class="mb-2">API Development <span class="float-end">75%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Technologies -->
+                <div class="col-md-4">
+                    <div class="p-4 bg-secondary bg-opacity-10 rounded shadow-sm">
+                        <h5 class="mb-4 text-center">Frontend Technologies</h5>
+                        <p class="mb-2">HTML/CSS <span class="float-end">90%</span></p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 90%;"></div>
+                        </div>
+
+                        <p class="mb-2">JavaScript <span class="float-end">80%</span></p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 80%;"></div>
+                        </div>
+
+                        <p class="mb-2">React <span class="float-end">75%</span></p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 75%;"></div>
+                        </div>
+
+                        <p class="mb-2">Bootstrap <span class="float-end">85%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Tools -->
+                <div class="col-md-4">
+                    <div class="p-4 bg-secondary bg-opacity-10 rounded shadow-sm">
+                        <h5 class="mb-4 text-center">Database & Tools</h5>
+                        <p class="mb-2">MySQL <span class="float-end">85%</span></p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 85%;"></div>
+                        </div>
+
+                        <p class="mb-2">Git <span class="float-end">90%</span></p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 90%;"></div>
+                        </div>
+
+                        <p class="mb-2">VS Code <span class="float-end">80%</span></p>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" style="width: 80%;"></div>
+                        </div>
+
+                        <p class="mb-2">Node Js <span class="float-end">70%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar bg-success" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Technologies -->
+            <div class="text-center mt-5">
+                <h5>Other Technologies & Concepts</h5>
+                <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+                    <span class="badge bg-primary">REST APIs</span>
+                    <span class="badge bg-primary">Hubspot</span>
+                    <span class="badge bg-primary">Third-Party Integrations</span>
+                    <span class="badge bg-primary">Gohighlevel</span>
+                    <span class="badge bg-primary">Performance Optimization</span>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="text-center mt-5">
+                <h5>Certifications & Learning</h5>
+                <div class="p-4 mt-3 rounded bg-gradient" style="background: linear-gradient(to right, #1f2937, #111827);">
+                    <h6 class="mb-1">O to 100 Web Development Course</h6>
+                    <small class="text-secondary">by Harikrat Singh</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5" id="experience" style="background-color: rgb(17 24 39); color: #fff;">
+        <div class="container">
+            <h2 class="text-center gradient-text">
+      Work <span>Experience</span>
+    </h2>
+            <p class="text-center text-muted mb-5">
+                My professional journey and contributions in software development
+            </p>
+
+            <!-- Timeline Card -->
+            <div class="experience-card p-4 mb-4" style="background: #1e293b; border-radius: 10px;">
+                <h4 class="fw-bold">Web Developer - Ayatech Solutions</h4>
+                <p class="text-muted mb-2">
+                    <i class="bi bi-geo-alt"></i> Remote &nbsp; | &nbsp;
+                    <i class="bi bi-calendar"></i> Feb 2022 – Feb 2025
+                </p>
+                <p>
+                    Worked on dynamic web applications, building custom solutions with PHP, Laravel, and WordPress to meet client requirements.
+                </p>
+                <h5 class="mt-3 fw-semibold">Key Responsibilities:</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Developed dynamic web applications with PHP & WordPress.</li>
+                            <li>Created custom templates and dynamic pages using PHP.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Developed custom WordPress plugins with REST APIs.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h6 class="mt-3 fw-semibold">Technologies Used:</h6>
+                <div>
+                    <span class="badge bg-secondary me-1">PHP</span>
+                    <span class="badge bg-secondary me-1">Laravel</span>
+                    <span class="badge bg-secondary me-1">WordPress</span>
+                    <span class="badge bg-secondary me-1">MySQL</span>
+                    <span class="badge bg-secondary me-1">Bootstrap</span>
+                </div>
+            </div>
+
+            <!-- Second Job -->
+            <div class="experience-card p-4 mb-4" style="background: #1e293b; border-radius: 10px;">
+                <h4 class="fw-bold">Web Developer - Gsquare Web Technologies</h4>
+                <p class="text-muted mb-2">
+                    <i class="bi bi-geo-alt"></i> Mohali &nbsp; | &nbsp;
+                    <i class="bi bi-calendar"></i> Nov 2020 – Dec 2022
+                </p>
+                <p>
+                    Built responsive WordPress themes and worked with Laravel & WebSocket for real-time applications.
+                </p>
+                <h5 class="mt-3 fw-semibold">Key Responsibilities:</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Built WordPress themes and integrated WooCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Worked with Laravel and WebSocket for real-time apps.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h6 class="mt-3 fw-semibold">Technologies Used:</h6>
+                <div>
+                    <span class="badge bg-secondary me-1">WordPress</span>
+                    <span class="badge bg-secondary me-1">WooCommerce</span>
+                    <span class="badge bg-secondary me-1">Laravel</span>
+                    <span class="badge bg-secondary me-1">WebSocket</span>
+                </div>
+            </div>
+
+            <!-- Third Job -->
+            <div class="experience-card p-4" style="background: #1e293b; border-radius: 10px;">
+                <h4 class="fw-bold">Web Developer - Web Perfection</h4>
+                <p class="text-muted mb-2">
+                    <i class="bi bi-geo-alt"></i> Mohali &nbsp; | &nbsp;
+                    <i class="bi bi-calendar"></i> Jan 2020 – Apr 2020
+                </p>
+                <p>
+                    Built custom websites using Webflow, Shopify, and CMS platforms with CRM integrations.
+                </p>
+                <h5 class="mt-3 fw-semibold">Key Responsibilities:</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Built custom websites using Webflow, Shopify, and CMS.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li>Integrated CRM solutions and third-party APIs.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h6 class="mt-3 fw-semibold">Technologies Used:</h6>
+                <div>
+                    <span class="badge bg-secondary me-1">Webflow</span>
+                    <span class="badge bg-secondary me-1">Shopify</span>
+                    <span class="badge bg-secondary me-1">Custom CMS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Education Section -->
+<section id="education" class="py-5 dark-section text-white">
+  <div class="container">
+    <h2 class="text-center gradient-text mb-4">
+      My <span>Education</span>
+    </h2>
+    <p class="text-center text-secondary mb-5">
+      My academic journey and milestones in non-medical education
+    </p>
+
+    <div class="timeline">
+      <!-- Bachelor -->
+      <div class="card experience-card p-4 mb-4">
+        <h4 class="fw-bold">Bachelor of Arts</h4>
+        <p class="text-muted mb-2">
+          <i class="bi bi-building"></i> Rabindranath Tagore University, Madhya Pradesh <br>
+          <i class="bi bi-calendar"></i> 2016 – 2019
+        </p>
+        <p>Focused on computer applications, core programming, and modern web technologies.</p>
+        <h6 class="mt-3 fw-semibold">Key Subjects:</h6>
+        <div>
+          <span class="badge bg-secondary me-1">Computer Applications</span>
+          <span class="badge bg-secondary me-1">Programming Fundamentals</span>
+          <span class="badge bg-secondary me-1">Database Systems</span>
+        </div>
+      </div>
+
+      <!-- Senior Secondary -->
+      <div class="card experience-card p-4 mb-4">
+        <h4 class="fw-bold">Senior Secondary (XII)</h4>
+        <p class="text-muted mb-2">
+          <i class="bi bi-building"></i> GSSS Sandhole, HPBoSE, Himachal Pradesh <br>
+          <i class="bi bi-calendar"></i> 2011 – 2012
+        </p>
+        <p>Completed Non-Medical stream with Physics, Chemistry, and Mathematics.</p>
+        <h6 class="mt-3 fw-semibold">Key Subjects:</h6>
+        <div>
+          <span class="badge bg-secondary me-1">Physics</span>
+          <span class="badge bg-secondary me-1">Chemistry</span>
+          <span class="badge bg-secondary me-1">Mathematics</span>
+        </div>
+      </div>
+
+      <!-- Secondary -->
+      <div class="card experience-card p-4">
+        <h4 class="fw-bold">Secondary (X)</h4>
+        <p class="text-muted mb-2">
+          <i class="bi bi-building"></i> Vipasha Public School, Sandhole, Himachal Pradesh <br>
+          <i class="bi bi-calendar"></i> 2009 – 2010
+        </p>
+        <p>Completed foundation education with excellent academic performance.</p>
+        <h6 class="mt-3 fw-semibold">Key Subjects:</h6>
+        <div>
+          <span class="badge bg-secondary me-1">Science</span>
+          <span class="badge bg-secondary me-1">Mathematics</span>
+          <span class="badge bg-secondary me-1">English</span>
+        </div>
+      </div>
     </div>
-    <div class="socials">
-      <a href="mailto:you@example.com">Email</a>
-      <a href="https://github.com/<username>" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/<your-handle>" target="_blank" rel="noopener">LinkedIn</a>
-    </div>
-  </div>
-  <div class="hero-photo">
-    <img src="assets/img/profile.jpg" alt="Jitander Mandhotra">
   </div>
 </section>
 
-<section class="container skills">
-  <h3>Core Skills</h3>
-  <ul class="tags">
-    <li>Laravel</li>
-    <li>PHP</li>
-    <li>MySQL</li>
-    <li>REST APIs</li>
-    <li>Queues & Jobs</li>
-    <li>Events & Listeners</li>
-    <li>WebSockets</li>
-    <li>Vue/React basics</li>
-    <li>WordPress</li>
-    <li>GitHub Actions</li>
-  </ul>
-</section>
 
-<section class="container highlights">
-  <h3>Highlights</h3>
-  <div class="cards">
-    <div class="card">
-      <h4>Complex Invoicing Engine</h4>
-      <p>Multi-tenant, role-based, agreement-driven invoice logic with soft deletes, traits, and queued emails.</p>
-    </div>
-    <div class="card">
-      <h4>Real-time Order Board</h4>
-      <p>Laravel Echo + WebSockets updates for vendors and clients, powered by events, listeners, and queues.</p>
-    </div>
-    <div class="card">
-      <h4>WordPress Headless APIs</h4>
-      <p>Custom endpoints, JWT auth and Laravel consumers for marketing sites.</p>
-    </div>
-  </div>
-</section>
+    <!-- Contact Section -->
+    <section class="py-5 bg-light" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-5">Get In Touch</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <p>Email: <a href="mailto:jitmandhotra786@gmail.com">jitmandhotra786@gmail.com</a></p>
+                    <p>Phone: 7018811904</p>
+                    <a href="https://github.com/jitumandhotra" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer class="container footer">
-  <p>© <span id="year"></span> Jitander Mandhotra</p>
-</footer>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Jitander Mandhotra | All Rights Reserved.</p>
+    </footer>
 
-<script src="assets/js/main.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
